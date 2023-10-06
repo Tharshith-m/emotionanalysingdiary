@@ -371,7 +371,7 @@ def main():
                else:
                    st.info("This diary analyses past 3 days and tracks your emotions trend ,so keep going ")
                # loading saved model  
-               loaded_model = pickle.load(open("C:/Users/thars/OneDrive/Desktop/miniproject/emotionsanalysing.sav", 'rb') )  # giving a title 
+               loaded_model = pickle.load(open("emotionsanalysing.sav", 'rb') )  # giving a title 
                def emotions_pred(input_data):
                  
                          y = loaded_model.predict(np.array(input_data))
